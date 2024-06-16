@@ -1,0 +1,22 @@
+[
+   {
+      "name": "Tank",
+      "age": 5,
+      "type": "dog"
+   },
+   {
+      "name": "Lady",
+      "age": 11,
+      "type": "dog"
+   },
+   {
+      "name": "Dope",
+      "age": 8,
+      "type": "cat"
+   },
+   {
+      "name": "Trump",
+      "age": 82,
+      "type": "human"
+   }
+]

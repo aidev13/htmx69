@@ -1,15 +1,29 @@
-import express from 'express'
+const express = require("express");
+const path = require("path");
+const app = express();
+const port = 3001;
 
+console.log("Stacey is fucking hott")
 
-const app = express()
-const port = 3000
+// HTML or View routes
+app.get("/about", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "about.html"));
+});
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "contact.html"));
+});
+
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "contact.html"));
+});
+
+// api routes
+const pets = require('./data/pets.json') // path for imported data
+app.get('/api/search-pets', (req, res) => {
+   res.json(pets)
 })
-
-// app.get('data/schema.json')
 
 app.listen(port, () => {
-  console.log(`The app is on port ${port}`)
-})
+  console.log(`Express running on http://localhost:${port}`);
+});

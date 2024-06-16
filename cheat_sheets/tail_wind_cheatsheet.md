@@ -1,10 +1,11 @@
-This Markdown cheat sheet covers the essential utility classes in Tailwind CSS and provides a quick reference for common use cases. For more comprehensive details, visit the [official Tailwind CSS documentation](https://tailwindcss.com/docs).
 
 # Tailwind CSS Cheat Sheet
 
 ---
 
 ## Setup and Configuration
+- **CDN link** `<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.1/dist/tailwind.min.css" rel="stylesheet">`
+
 - **Install via npm**: `npm install tailwindcss`
 - **Generate config file**: `npx tailwindcss init`
 

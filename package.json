@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Playing with HTMX",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "dev": "nodemon server.js"
   },
@@ -11,9 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
-  },
-  "devDependencies": {
+    "express": "^4.19.2",
     "nodemon": "^3.1.3"
   }
 }
