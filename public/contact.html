@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
 
-<body>
- <h1>Contact!</h1>
+    <!-- Page Content -->
+    <div class="flex-grow">
+        <!-- Your page content goes here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-200 py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h2 class="text-xl font-bold mb-4">Company Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac venenatis augue. Duis hendrerit, nunc nec feugiat tincidunt, purus magna facilisis magna.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+                <p><strong>Address:</strong></p>
+                <p>123 Elm Street</p>
+                <p>Springfield, IL 62704</p>
+                <p>USA</p>
+
+                <p class="mt-4"><strong>Email:</strong></p>
+                <p><a href="mailto:info@example.com" class="text-blue-400 hover:text-blue-300">info@example.com</a></p>
+
+                <p class="mt-4"><strong>Phone:</strong></p>
+                <p>(555) 123-4567</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div>
+                <h2 class="text-xl font-bold mb-4">Follow Us</h2>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M24 4.56v14.88A4.56 4.56 0 0 1 19.44 24H4.56A4.56 4.56 0 0 1 0 19.44V4.56A4.56 4.56 0 0 1 4.56 0h14.88A4.56 4.56 0 0 1 24 4.56zM7.88 19.44h4.32V12H7.88v7.44zM10.56 10a2.16 2.16 0 1 0 0-4.32 2.16 2.16 0 0 0 0 4.32zm6.48 9.44h4.32v-4.32c0-2.16-.72-3.6-2.88-3.6-1.44 0-2.16.96-2.52 1.68v6.24zm-2.16-7.44h4.32v.96c.72-1.44 2.16-2.16 4.32-2.16 3.6 0 4.32 2.16 4.32 5.04v7.44h-4.32v-6.48c0-1.44-.72-2.16-2.16-2.16-1.44 0-2.16 1.2-2.16 2.88V19.4zm-9.12-9.12h1.92v-.96c0-2.16 2.16-2.88 3.84-2.88h.96v2.88h-.96c-.96 0-1.68.24-1.68 1.2v.72h2.64l-.48 3.12h-2.16V24H6.96V9.44H4.56z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 6.627 5.373 12 12 12 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12zm0 4.529c2.071 0 2.328.008 3.146.046 2.179.1 3.188 1.25 3.287 3.287.037.818.045 1.075.045 3.146s-.008 2.328-.045 3.146c-.1 2.179-1.25 3.188-3.287 3.287-.818.037-1.075.045-3.146.045s-2.328-.008-3.146-.045c-2.179-.1-3.188-1.25-3.287-3.287-.037-.818-.045-1.075-.045-3.146s.008-2.328.045-3.146c.1-2.179 1.25-3.188 3.287-3.287.818-.037 1.075-.045 3.146-.045zm0 1.486c-2.033 0-2.275.007-3.075.044-1.154.055-1.678.5-1.736 1.736-.037.799-.044 1.041-.044 3.075s.007 2.275.044 3.075c.055 1.154.5 1.678 1.736 1.736.799.037 1.041.044 3.075.044s2.275-.007 3.075-.044c1.154-.055 1.678-.5 1.736-1.736.037-.799.044-1.041.044-3.075s-.007-2.275-.044-3.075c-.055-1.154-.5-1.678-1.736-1.736-.799-.037-1.041-.044-3.075-.044zm0 3.685c1.258 0 2.279 1.02 2.279 2.279 0 1.258-1.02 2.279-2.279 2.279-1.258 0-2.279-1.02-2.279-2.279 0-1.258 1.02-2.279 2.279-2.279zm4.806-2.844c0 .423-.343.766-.766.766-.423 0-.766-.343-.766-.766s.343-.766.766-.766.766.343.766.766z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.608 1.798-1.57 2.165-2.717-.951.564-2.005.975-3.127 1.195-.896-.954-2.173-1.55-3.588-1.55-2.717 0-4.918 2.201-4.918 4.917 0 .385.043.761.127 1.122-4.087-.205-7.713-2.164-10.14-5.144-.424.728-.666 1.574-.666 2.475 0 1.71.869 3.213 2.189 4.096-.806-.026-1.566-.247-2.228-.616v.062c0 2.385 1.697 4.374 3.946 4.827-.414.113-.849.173-1.296.173-.317 0-.626-.031-.929-.088.627 1.956 2.445 3.379 4.604 3.421-1.68 1.318-3.809 2.105-6.115 2.105-.398 0-.79-.023-1.175-.069 2.179 1.396 4.768 2.212 7.557 2.212 9.054 0 14.01-7.498 14.01-14.008 0-.213-.005-.426-.014-.637.961-.695 1.794-1.562 2.453-2.549z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-500">&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
-
 </html>

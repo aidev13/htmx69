@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- HTMX CDN -->
-   <script src="https://unpkg.com/htmx.org@1.9.12"
-      integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2"
-      crossorigin="anonymous"></script>
-   <!-- Tailwind CDN -->
-   <script src="https://cdn.tailwindcss.com"></script>
-  
-
-   <title>htmX69</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Buttons Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+    <style>
+        body {
+            background-color: #1a202c; /* Dark background */
+        }
+    </style>
 </head>
+<body class="flex items-center justify-center h-screen">
 
-<body style="background-color: rgb(36, 36, 36); margin: 50px;">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 p-4">
+        <!-- About Button -->
+        <button 
+            class="flex items-center justify-center bg-indigo-500 hover:bg-indigo-600 text-white text-xl font-bold py-16 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+            hx-get="/about" hx-target="#display">
+            About Us
+        </button>
 
-   <h1 style="color: white;">HOME</h1>
+        <!-- Contact Button -->
+        <button 
+            class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white text-xl font-bold py-16 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+            hx-get="/contact" hx-target="#display">
+            Contact Us
+        </button>
+
+        <!-- Services Button -->
+        <button 
+            class="flex items-center justify-center bg-red-500 hover:bg-red-600 text-white text-xl font-bold py-16 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+            hx-get="/services " hx-target="#display">
+            Our Services
+        </button>
+
+        <!-- Learn More Button -->
+        <button 
+            class="flex items-center justify-center bg-yellow-500 hover:bg-yellow-600 text-white text-xl font-bold py-16 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300"
+            hx-get="/learn-more" hx-target="#display">
+            Learn More
+        </button>
+    </div>
+
+    <div id="display" style="background-color: aliceblue;"></div>
+
 </body>
-
 </html>
